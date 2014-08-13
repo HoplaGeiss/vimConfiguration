@@ -66,8 +66,8 @@ nnoremap vv ggVG
 " Formating
 "----------
 
-vmap Q gq
-nmap Q gqap
+vmap <C-a> gq
+nmap <C-a> gqap
 
 " Format the entire file
 nnoremap <leader>fef mx=ggG='x
@@ -118,6 +118,10 @@ nnoremap <silent> <leader>m :normal V"+ywv$r-"+ppHwv$r-<Esc>o<Esc>
 " Opens the todo file
 nnoremap <Leader>; :tabe ~/.vim/TODO<CR>
 inoremap <Leader>; <Esc>:tabe ~/.vim/TODO<CR>
+
+" Opens the softwares file
+nnoremap <Leader>' :tabe ~/Documents/important/software.txt<CR>
+inoremap <Leader>' <Esc>:tabe ~/Documents/important/software.txt<CR>
 
 " -----
 " dates
